@@ -33,18 +33,17 @@ Sections<br>
 
 Not implemented yet<br>
 3. Add x-repetitions of "mappe" to input file in setup.ini<br>
-3. Add y-errors to input file in setup.ini<br>
-1. Check xml well-formed on added xml file<br>
-2. Check xml validate on added xml file<br>
+4. Add y-errors to input file in setup.ini<br>
+5. Check xml well-formed on added xml file<br>
+6. Check xml validate on added xml file<br>
 
 Only single file implemented in this first version.<br>
 Using stream-based XML Reader so large xml-files are supported.<br>
 
 ToDo:<br>
 - Implement section 3,4,5,6<br>
-- Implement directory (and subdirectories) xml-parsing (to check for well-formed and validation)<br>
-
-- Implement error-traps on all levels<br>
+- Implement directory (and subdirectories) xml-parsing (to check for well-formed and validation).<br>
+- Implement error-traps on all levels.<br>
 - Implement isset on all array-elements to be read as parameters from PHP-parameter, INI-setup & XML-setup.<br>
 - Implement parameter for paramaeter logging console and/or file (extent from log/nolog as is).<br>
 - Complete setup.xml to array XML-setup.<br>
