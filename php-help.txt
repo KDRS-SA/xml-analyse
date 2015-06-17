@@ -1,0 +1,7 @@
+Usage example (all parameters are optional):
+"php ' . $strPhpScript . ' key1=value1 key2=value2 key3 etc.
+
+Parameters:
+
+php parameters not supported yet
+use setup.ini for parameter input

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup name="setup" id="setup" xml_rev="2015-05-22">
+    <special_char>æøåÆØÅ</special_char>
+
+ 	<parameter>
+		<type priority="1">php</type>
+		<type priority="2" file="setup.ini">ini</type>
+		<type priority="3" file="xml\setup.xml">xml</type>
+	</parameter>
+	
+	<settings>
+		<!-- use either charsep_ascii_numor csv_charsep_string -->
+		<csv_charsep_ascii_num>59</csv_charsep_ascii_num>	<!-- ="59" if semicolon ";" is separator (= ascii #59) -->
+		<csv_charsep_string></csv_charsep_string>			<!-- semicolon ";" can NOT be part of this string! -->
+		<csv_entity>_#_</csv_entity>						<!-- used as substitute for selected csv_charsep in log & error -->
+	</settings>
+	
+	<DATASET>
+		<dataset_dir>uttrekk</dataset_dir>
+		<subdir>1</subdir>
+		<xml_validate>1</xml_validate>
+		<xml_single_file>0</xml_single_file>
+		<xml_single_filename></xml_single_filename>
+		<xml_single_filename_ext></xml_single_filename_ext>
+		<xml_single_filename_validate></xml_single_filename_validate>
+		<xml_single_filename_validate_ext></xml_single_filename_validate_ext>
+	</DATASET>
+	
+	<CUSTOM>
+		<custom_postfix>out</custom_postfix>
+		<custom_timestamp>yyyymmdd-hhnn</custom_timestamp>
+		<custom_run></custom_run>
+	</CUSTOM>
+	
+    <MAP>
+    	<!-- input -->
+    	<input_id></input_id>
+    	<input_header_rows></input_header_rows>
+    	<input_columns></input_columns>
+    	<input_columns_min></input_columns_min>
+    	<input_columns_max></input_columns_max>
+    	<!-- input column data: [column number] = mandatory, [o] = optional, [e] = log as error, [x] = log as error and skip to next row -->
+    	<input_columns_data></input_columns_data>
+    	<input_type></input_type>
+    	
+    	<!-- output -->
+    	<output_id></output_id>
+    	<output_columns></output_columns>
+    	<output_type></output_type>
+    </MAP>
+
+	<SOURCE>
+		<source_drive></source_drive>
+		<source_dir>source</source_dir>
+		<source_filename></source_filename>
+		<source_ext></source_ext>
+		<source_filename_validate></source_filename_validate>
+		<source_ext_validate></source_ext_validate>
+		<source_multiple_files></source_multiple_files>
+		<source_multiple_order>Alpha</source_multiple_order>
+		<source_char_encoding>UTF-8</source_char_encoding>
+	</SOURCE>
+
+	<TARGET>
+		<target_drive></target_drive>
+		<target_dir>target</target_dir>
+		<target_filename></target_filename>
+		<target_ext>csv</target_ext>
+		<target_char_encoding>UTF-8</target_char_encoding>
+		<target_postfix>out</target_postfix>
+		<target_timestamp>yyyymmdd-hhnn</target_timestamp>
+	</TARGET>
+
+	<LOG>
+		<log_drive></log_drive>
+		<log_dir></log_dir>
+		<log_filename></log_filename>
+		<log_timestamp>yyyymmdd_hhnn</log_timestamp>
+		<log_ext></log_ext>
+	</LOG>
+
+	<DEBUG>
+		<debug_level>1</debug_level>
+		<debug_extended>1</debug_extended>
+	</DEBUG>
+</setup>

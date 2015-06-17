@@ -1,0 +1,59 @@
+
+PHP start [2015-06-17T12:53:31+02:00]
+PHP filnavn "main.php"
+
+START php include >>> 11_init.inc.php >>>
+- open version filename "xml\version.xml"
+-- code name "xml-analyse"
+-- code version "0.1.0"
+-- code date "2015-06-16"
+-- framework name "php-procedural-transform"
+-- framework version "0.1.3"
+-- framework date "2015-06-04"
+END php include <<< 11_init.inc.php <<<
+
+START php include >>> 12_functions.inc.php >>>
+END php include <<< 12_functions.inc.php <<<
+
+START php include >>> 13_setup-read.inc.php >>>
+- php parameter section
+-- php parameter count = "0"
+- open INI-setup filename "setup.ini"
+-- INI-file [section] count = 8
+- open XML-setup filename "xml\setup.xml"
+xml setup
+END php include <<< 13_setup-read.inc.php <<<
+
+START php include >>> 14_setup-select.inc.php >>>
+- selected CSV charsep ascii 59 = ";"
+- selected CSV entity = "_#_"
+- source filename [source\xml-analyse.csv]
+- target filename [target\xml-analyse_out_20150617-1253.csv]
+- log filename [log\xml-analyse_20150617-1253.log]
+- error filename [log\xml-analyse_20150617-1253_error.log]
+- open log filename [log\xml-analyse_20150617-1253.log]
+END php include <<< 14_setup-select.inc.php <<<
+
+START php include >>> 51_xml-transform.inc.php >>>
+- open transform definition filename "README.md"
+- transform definition file has 77 lines and 3554 characters
+-- custom run parameter "all"
+-- arkivstruktur add mappe count "10"
+-- arkivstruktur add mappe error count "2"
+-- single file mode detected
+-- dataset dir "uttrekk"
+-- XML Reader in filename "arkivstruktur.xml"
+-- XML Reader in filepath "uttrekk/arkivstruktur.xml"
+-- XML validator filename "arkivstruktur.xsd"
+-- XML Validate filepath "uttrekk/arkivstruktur.xsd"
+-- XML Reader filename out "arkivstruktur_out_20150617-1253.xml"
+-- XML Reader out filepath "uttrekk/arkivstruktur_out_20150617-1253.xml"
+uttrekk/arkivstruktur.xml
+Filen arkivstruktur.xml er korrektstrukturert.
+Test description (XML Test well-formed) Test result (true) Test result description (The file arkivstruktur.xml is well-formed.)
+ ##############
+
+uttrekk/arkivstruktur.xml
+XML file to test validity is arkivstruktur.xmlusing XSD file arkivstruktur.xsd
+Filen arkivstruktur.xml er korrektstrukturert.
+Test description (XML Test well-formed) Test result (true) Test result description (The file arkivstruktur.xml is well-formed.)

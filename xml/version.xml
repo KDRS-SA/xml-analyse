@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<version name= "Version" id= "version" xml_rev= "2015-05-23" >
+    <special_char>æøåÆØÅ</special_char>
+    <code>
+        <name>xml-analyse</name>
+        <version>0.1.0</version>
+        <date>2015-06-17</date>
+    </code> 
+    <framework> 
+        <name>php-procedural-transform</name>
+        <version>0.1.4</version>
+        <date>2015-06-17</date>
+    </framework>
+</version>
