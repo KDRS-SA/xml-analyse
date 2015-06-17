@@ -1,5 +1,11 @@
-# xml-large-files-php
-Generate, handle and validate large xml-files in PHP
+# xml-analyse
+Analyse xml-files in PHP<br>
+- Supports large xml-files (stream-base PHP XML Reader)<br>
+- Check XML well-formed<br>
+- XML validation<br>
+- Generate large XML-file for test<br>
+- Add errors to XML for test<br>
+- Check XML well-formed & validate on enlarged XML-file<br>
 
 Sections below:<br>
 - PHP framework<br>
@@ -16,34 +22,33 @@ Open Source PHP framework "KDRS-SA/php-procedural-framework":<br>
 https://github.com/KDRS-SA/php-procedural-framework<br>
 
 ToDo:<br>
-- Read debug-parameters from parameters (not set variables in PHP-script manually).
-- Coherent overall parameter-definitions from PHP-parameters, INI-setup, XML-setup.
+- Coherent overall parameter-definitions from PHP-parameters, INI-setup, XML-setup.<br>
 - Implement resulting run-parameters into the PHP-code (read into variables for execution).<br>
 
 ## Transform definition ##
 
-Sections
-1. Check xml well-formed
-2. Check xml validate
+Sections<br>
+1. Check xml well-formed<br>
+2. Check xml validate<br>
 
-Not implemented yet
-3. Add x-repetitions of "mappe" to input file in setup.ini
-3. Add y-errors to input file in setup.ini
-1. Check xml well-formed on added xml file
-2. Check xml validate on added xml file
+Not implemented yet<br>
+3. Add x-repetitions of "mappe" to input file in setup.ini<br>
+3. Add y-errors to input file in setup.ini<br>
+1. Check xml well-formed on added xml file<br>
+2. Check xml validate on added xml file<br>
 
-Only single file implemented in this first version.
-Using stream-based XML Reader so large xml-files are supported.
+Only single file implemented in this first version.<br>
+Using stream-based XML Reader so large xml-files are supported.<br>
 
-ToDo:
-- Implement section 3,4,5,6
-- Implement directory (and subdirectories) xml-parsing (to check for well-formed and validation)
+ToDo:<br>
+- Implement section 3,4,5,6<br>
+- Implement directory (and subdirectories) xml-parsing (to check for well-formed and validation)<br>
 
-- Implement error-traps on all levels
-- Implement isset on all array-elements to be read as parameters from PHP-parameter, INI-setup & XML-setup.
-- Implement parameter for paramaeter logging console and/or file (extent from log/nolog as is).
-- Complete setup.xml to array XML-setup.
-- Implement RunParameter selection from PHP-parameter, setup.ini and setup.xml (uses setup.ini as is).
+- Implement error-traps on all levels<br>
+- Implement isset on all array-elements to be read as parameters from PHP-parameter, INI-setup & XML-setup.<br>
+- Implement parameter for paramaeter logging console and/or file (extent from log/nolog as is).<br>
+- Complete setup.xml to array XML-setup.<br>
+- Implement RunParameter selection from PHP-parameter, setup.ini and setup.xml (uses setup.ini as is).<br>
 
 ## Tools ###
 PHP-editor<br>
